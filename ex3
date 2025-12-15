@@ -1,15 +1,16 @@
-COFFEE_PRICE = 120
-TEA_PRICE = 80
-JUICE_PRICE = 100
-WATER_PRICE = 50
-LEMONADE_PRICE = 90
+coffee = 120
+tea = 80
+juice = 100
+water = 50
+lemonade = 90
 
 print("🍵 МЕНЮ КАФЕ ☕")
-print("1. Кофе - 120 руб. ☕")
-print("2. Чай - 80 руб. 🍵")
-print("3. Сок - 100 руб. 🧃")
-print("4. Вода - 50 руб. 💧")
-print("5. Лимонад - 90 руб. 🍋")
+    
+print("1) Кофе - 120 руб. ☕")
+print("2) Чай - 80 руб. 🍵")
+print("3) Сок - 100 руб. 🧃")
+print("4) Вода - 50 руб. 💧")
+print("5) Лимонад - 90 руб. 🍋")
 
 drink_input = input("Введите номер напитка: ")
 quantity = int(input("Введите количество порций: "))
@@ -17,26 +18,26 @@ quantity = int(input("Введите количество порций: "))
 match drink_input:
     case "1":
         drink_name = "Кофе"
-        price = COFFEE_PRICE
+        price = coffee
         emoji = "☕"
     case "2":
         drink_name = "Чай"
-        price = TEA_PRICE
+        price = tea
         emoji = "🍵"
     case "3":
         drink_name = "Сок"
-        price = JUICE_PRICE
+        price = juice
         emoji = "🧃"
     case "4":
         drink_name = "Вода"
-        price = WATER_PRICE
+        price = water
         emoji = "💧"
     case "5":
         drink_name = "Лимонад"
-        price = LEMONADE_PRICE
+        price = lemonade
         emoji = "🍋"
     case _:
-        print("Ошибка: напиток не найден")
+        print("❌Ошибка: напиток не найден❌")
         exit()
 
 match quantity:
